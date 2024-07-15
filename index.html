@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/ImgLogoHayashi1.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Italianno&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sedan:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Dr Hayashi</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+                <nav class="navbar">
+                    <ul class="list-navbar">
+                        <li class="nav-item"><a href="#ClinicaHayashi">O QUE É A CLÍNICA HAYASHI</a></li>
+                        <li class="nav-item"><a href="#ConceitoMetodologia">CONCEITO E METODOLOGIA</a></li>
+                        <li class="nav-item"><a href="#quemsou">QUEM SOU</a></li>
+                        <li class="nav-item"><a href="#area-depoimentos">DEPOIMENTOS</a></li>
+                        <li class="nav-item"><a href="#contato">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="mobile-menu">
+                    <ul class="overlay-content">
+                        <li class="nav-item-mobile"><a href="#ClinicaHayashi" class="nav-link" onclick="closeNav()">O
+                                QUE É A CLÍNICA HAYASHI</a></li>
+                        <li class="nav-item-mobile"><a href="#ConceitoMetodologia" class="nav-link"
+                                onclick="closeNav()">CONCEITO E METODOLOGIA</a></li>
+                        <li class="nav-item-mobile"><a href="#quemsou" class="nav-link" onclick="closeNav()">QUEM
+                                SOU</a></li>
+                        <li class="nav-item-mobile"><a href="#area-depoimentos" class="nav-link"
+                                onclick="closeNav()">DEPOIMENTOS</a></li>
+                        <li class="nav-item-mobile"><a href="#contato" class="nav-link" onclick="closeNav()">CONTATO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-button-wrapper">
+            <button class="nav-button-mobile" onclick="openNav()">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+        </div>
+    </header>
+    <div class="container-img">
+        <img src="images/ImgLogoHayashi1.jpg" alt="imagem marca hayashi" class="img-logo">
+    </div>
+    <main class="parte-principal">
+        <section id="ClinicaHayashi">
+            <div class="container-clinica">
+                <div class="sobreclinica">
+                    <h1 class="titulo-default">O QUE É A CLÍNICA HAYASHI</h1>
+                    <div class="description-clinica">
+                        <p class="description">
+                           
+A Clínica, fundada em 2023 pelo Dr. Matheus Hayashi, é líder em tratamentos hormonais, nutrologia e medicina esportiva. Oferecemos cuidados personalizados, diagnósticos precisos e protocolos terapêuticos inovadores. Com uma equipe multidisciplinar, incluindo nutricionistas e personal trainers, buscamos não apenas tratar sintomas, mas promover uma transformação positiva na vida de nossos pacientes. Priorizamos o cuidado centrado no paciente, combinando tecnologia médica avançada com uma abordagem compassiva e personalizada, capacitando-os a viver uma vida plena e vibrante.
+                        </p>
+                    </div>
+                </div>
+                <div class="img-container-clinica">
+                    <img src="images/ImagemEscritórioHayashi2.jpg" alt="" class="img-clinica">
+                </div>
+            </div>
+        </section>
+        <h1 class="titulo-principal-conceito-metodologia">CONCEITO E METODOLOGIA</h1>
+        <section id="ConceitoMetodologia">
+            <div class="container-conceito-metodologia">
+                <div class="conceito">
+                    <i class="fas fa-lightbulb" id="icone-conceito"></i>
+                    <h1 class="titulo-conceito-metodologia">CONCEITO</h1>
+                    <p class="description-conceito-metodologia">
+                        Nosso conceito é estabelecer no mercado como uma experência premium, em que você como paciente,
+                        se sinta verdadeiramente acolhido e tratado de forma exclusiva durante todo o acompanhamento
+                        respeitando toda ética e profissionalismo da Medicina.
+                    </p>
+                </div>
+                <div class="metodologia">
+                    <i class="fas fa-cogs" id="icone-metodologia"></i>
+                    <h1 class="titulo-conceito-metodologia">METODOLOGIA</h1>
+                    <p class="description-conceito-metodologia">
+                        Na Clinica Hayashi, nossa metodologia é centrada no paciente e baseada na colaboração
+                        interdisciplinar entre nossos diversos profissionais altamente especializados. Ao combinar os
+                        conhecimentos e habilidades de especialistas em áreas como nutrição, treinamento, medicina
+                        endocrinológica e esportiva, oferecemos uma abordagem holística e integrada ao cuidado de saúde.
+
+                        Cada paciente que entra na Clinica Hayashi é recebido por uma equipe dedicada, composta por
+                        profissionais qualificados e experientes em suas respectivas áreas. Inicialmente, realizamos uma
+                        avaliação completa e individualizada para entender as necessidades e objetivos de cada pessoa.
+                    </p>
+                </div>
+            </div>
+            <div class="video-hayashi-conceito-metodologia">
+                <video src="video/VideoHayashiConceitoMetodologia.mp4" type="video/mp4" class="video-hayashi"
+                    controls>
+                </video>
+            </div>
+        </section>
+        <section id="quemsou">
+            <div class="container-quem-sou-geral">
+                <div class="container-quemsou">
+                    <h1 class="titulo-quem-sou">
+                        QUEM SOU?
+                    </h1>
+                    <p class="description-quem-sou">
+                        Dr. Matheus Hayashi, CEO da Clinica Hayashi, é um médico visionário e renomado. Graduado em Medicina pela Faculdade de Medicina de Valença, demonstrou compromisso com a excelência. Destacou-se como presidente da Liga Acadêmica de Nutrologia, mostrando paixão pela ciência médica. Além disso, é reconhecido internacionalmente como atleta de fisiculturismo, acumulando títulos pela IFBB e NPC. Autor do livro “Emagrecimento com Fitoterápicos”, lidera a Clinica Hayashi rumo à excelência médica e ao bem-estar holístico dos pacientes.
+                    </p>
+                </div>
+                <div class="container-imagem">
+                    <img src="images/imgHayashi3.png" alt="imagem de hayashi" class="imgHayashi-quem-sou">
+                </div>
+            </div>
+            <div class="container-card-geral">
+                <div class="container-cards-one">
+                    <div class="card-one">
+                        <i class="fas fa-user-md" id="icone-medico"></i>
+                        <h3 class="titulo-card">Pós-Graduado em Nutrologia</h3>
+                        <p class="description-formacao">
+                            Atualmente, estou me especializando em Nutrologia para oferecer tratamentos mais abrangentes
+                            e personalizados aos meus pacientes, buscando sempre a excelência na minha prática médica.
+                            Meu compromisso em me especializar em Nutrologia reflete minha busca incessante por oferecer
+                            tratamentos personalizados e abrangentes aos meus pacientes. A nutrição desempenha um papel
+                            fundamental na saúde e no bem-estar, e estou dedicado a fornecer orientações precisas e
+                            eficazes para promover hábitos alimentares saudáveis e equilibrados.
+                        </p>
+                    </div>
+                    <div class="card-two">
+                        <i class="fas fa-user-md" id="icone-medico"></i>
+                        <h3 class="titulo-card">Atuação como Palestrante e Perito Judicial</h3>
+                        <p class="description-formacao">
+                            Como palestrante e perito judicial, tenho a oportunidade de compartilhar meu conhecimento e
+                            experiência, contribuindo para o avanço da medicina e da justiça. Esta é uma extensão
+                            valiosa do meu trabalho clínico.
+                            Minha participação como palestrante e perito judicial é uma extensão importante do meu
+                            trabalho clínico. Ao compartilhar meu conhecimento e experiência, estou contribuindo para a
+                            disseminação de informações precisas e para a aplicação justa da lei, garantindo que os
+                            melhores padrões de cuidados médicos sejam mantidos em todas as áreas da prática médica.
+                        </p>
+                    </div>
+                <div class="container-cards-two">
+                    <div class="card-one">
+                        <i class="fas fa-user-md" id="icone-medico"></i>
+                        <h3 class="titulo-card">Paixão pela Medicina Esportiva</h3>
+                        <p class="description-formacao">
+                            Minha paixão pela Medicina Esportiva é o que impulsiona minha busca contínua por tratamentos
+                            e abordagens inovadoras. Estou comprometido em ajudar meus pacientes a alcançarem seus
+                            objetivos de saúde e bem-estar através do esporte.
+                            Fornecendo tratamentos de última geração e personalizados aos atletas e entusiastas do
+                            esporte. Estou empenhado em auxiliar meus pacientes a atingirem seu potencial máximo,
+                            promovendo o desempenho atlético, a recuperação de lesões e a saúde geral por meio de
+                            abordagens integradas e inovadoras, que refletem não apenas minha expertise clínica, mas
+                            também meu compromisso com o bem-estar e o sucesso de cada indivíduo que confia em meus
+                            cuidados.
+                        </p>
+                    </div>
+        
+                    <div class="card-two">
+                        <i class="fas fa-user-md" id="icone-medico"></i>
+                        <h3 class="titulo-card">Especialização em Endocrinologia Pediátrica</h3>
+                            <p class="description-formacao">
+                                A especialização em Endocrinologia Pediátrica é uma área pela qual tenho grande
+                                interesse e dedicação. Trabalhar com crianças e adolescentes me motiva a oferecer
+                                cuidados de qualidade e a contribuir para o seu desenvolvimento saudável.
+                                Minha especialização em Endocrinologia Pediátrica reflete meu compromisso em cuidar das
+                                necessidades específicas de saúde das crianças e adolescentes. Trabalhar nessa área
+                                desafiadora e gratificante me permite oferecer cuidados especializados e personalizados,
+                                garantindo o crescimento saudável e o desenvolvimento adequado dos jovens pacientes que
+                                atendo.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="area-depoimentos">
+            <!--  <section class="depoimentos mySwiper"> -->
+            <h1 class="title-depoimentos">DEPOIMENTOS</h1>
+            <h2 class="subtitle-depoimentos">PACIENTES</h2>
+            <div class="local-depoimentos">
+                <section class="depoimentos mySwiper">
+                    <div class="depoimentos-container swiper-wrapper">
+                        <div class="slide swiper-slide">
+                            <i class="fas fa-quote-left" id="quote"></i>
+                            <p class="depoi-txt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, consequatur molestias
+                                beatae non saepe optio eveniet cupiditate commodi libero molestiae in, provident harum
+                                esse ipsum consequuntur fuga dolorem expedita pariatur?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis consectetur soluta
+                                quae porro? Amet eveniet sequi illum exercitationem inventore, nulla eum commodi, nemo
+                                expedita in eaque placeat mollitia possimus?
+                            </p>
+
+                            <div class="person">
+                                <i class="fas fa-user-injured" id="paciente"></i>
+                                <p class="nome-person">Paciente anônimo</p>
+                            </div>
+
+                        </div>
+
+                        <div class="slide swiper-slide">
+                            <i class="fas fa-quote-left" id="quote"></i>
+                            <p class="depoi-txt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, consequatur molestias
+                                beatae non saepe optio eveniet cupiditate commodi libero molestiae in, provident harum
+                                esse ipsum consequuntur fuga dolorem expedita pariatur?
+                            </p>
+
+                            <div class="person">
+                                <i class="fas fa-user-injured" id="paciente"></i>
+                                <p class="nome-person">Paciente anônimo</p>
+                            </div>
+
+                        </div>
+
+                        <div class="slide swiper-slide">
+                            <i class="fas fa-quote-left" id="quote"></i>
+                            <p class="depoi-txt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, consequatur molestias
+                                beatae non saepe optio eveniet cupiditate commodi libero molestiae in, provident harum
+                                esse ipsum consequuntur fuga dolorem expedita pariatur?
+                            </p>
+
+                            <div class="person">
+                                <i class="fas fa-user-injured" id="paciente"></i>
+                                <p class="nome-person">Paciente anônimo</p>
+                            </div>
+
+                        </div>
+
+                        <div class="slide swiper-slide">
+                            <i class="fas fa-quote-left" id="quote"></i>
+                            <p class="depoi-txt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, consequatur molestias
+                                beatae non saepe optio eveniet cupiditate commodi libero molestiae in, provident harum
+                                esse ipsum consequuntur fuga dolorem expedita pariatur?
+                            </p>
+
+                            <div class="person">
+                                <i class="fas fa-user-injured" id="paciente"></i>
+                                <p class="nome-person">Paciente anônimo</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next" id="btn-carrossel"></div>
+                    <div class="swiper-button-prev" id="btn-carrossel"></div>
+                    <div class="swiper-pagination" id="btn-carrossel"></div>
+                </section>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container-contato">
+                <h1 class="title-contato">Entre em contato:</h1>
+                <i class="fas fa-mobile-alt" id="mobile-icon"></i>
+                <p class="description-footer">(12) 998804-1773</p>
+                <i class="fab fa-whatsapp" id="whatsapp-icon"></i>
+                <p class="description-footer">(12) 998804-1773</p>
+                <i class="fas fa-map-marker-alt" id="map-icon"></i>
+                <p class="description-footer">SÃO PAULO, São Paulo -SP</p>
+            </div>
+            <div class="container-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.703603387226!2d-45.907373230625744!3d-23.219910628303623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc357fafd649cf%3A0xccd361ff4b5da963!2sR.%20Jurema%20Vi%C3%AAira%20Medrado%2C%2065%20-%20Parque%20Res.%20Aquarius%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012246-180!5e0!3m2!1spt-BR!2sbr!4v1713542313309!5m2!1spt-BR!2sbr"
+                    width="1500" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+        </section>
+        <a href="https://api.whatsapp.com/send?phone=55129988041773&text=Olá! Queria agendar uma consulta! Qual seria sua disponibilidade? "
+            target="_blank" class="whatsapp-icon" target="_blank">
+            <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
+        </a>
+        <button onclick="scrollToTop()" id="scrollBtn" title="Voltar ao Topo">&#8679;</button>
+    </main>
+    <footer class="roda-pe">
+        <div class="img-container-footer">
+            <img src="images/Marca_Hayashi-01.png" alt="Marca hayashi" class="logo-hayashi-footer">
+        </div>
+        <div class="copyright">
+            &copy;Copyright 2024 - Matheus Hayashi
+        </div>
+        <div class="container-icon-instagram">
+            <a href="https://www.instagram.com/hayashidr/" target="_blank" class="link-instagram"><i
+                    class="fab fa-instagram" id="icon-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

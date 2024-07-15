@@ -1,0 +1,1172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    image-rendering: auto;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+    border-radius: 100px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+body {
+    background-color: #191919;
+    transition: .5s;
+   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.list-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 270px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 10px;
+   
+    
+}
+
+
+#whatsapp {
+    font-size: 40px;
+    color: #f1f1f2;
+    transition: 0.5s;
+}
+
+#whatsapp:hover {
+    padding: 5px;
+}
+
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+/*Estilizando o botao que leva o usuário pra cima no site novamente.*/
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 24px;
+    background-color: #191919;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    margin: 10px;
+}
+
+#scrollBtn:hover {
+    background-color: #f1f1f2;
+    color: #191919;
+}
+
+
+/*Estilização do Header */
+
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #191919;
+    transition: .5s;
+    z-index: 1;
+}
+
+header.rolagem {
+    background-color: #f1f1f2;
+    padding: 30px 4%;
+}
+
+header.rolagem a{
+    color: #191919;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #f1f1f2;
+    text-decoration: none;
+    transition: .2s;
+}
+
+
+a:hover {
+    font-size: 18px
+}
+
+.container-img {
+   background-color: #191919;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 130px;
+   height: 600px;
+   z-index: 1;
+}
+
+.img-logo {
+    width: 350px;
+    height: 350px;
+    box-shadow: 10px 10px 10px #f1f1f2;
+    border-radius: 500px;
+    transition: .2s;
+}
+
+.img-logo:hover {
+    padding: 15px;
+}
+
+.container-img .img-logo {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 25px;
+    }
+}
+
+/*Esitlização container clinica*/
+.container-clinica {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.img-clinica {
+    margin: 100px;
+    width: 700px;
+    border-radius: 20px;
+    
+}
+
+.titulo-default {
+    color: #f1f1f2;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+
+.sobreclinica {
+    margin-top: 100px;
+    height: 400px;
+    border-radius: 30px;
+    width: 150vh;
+    transition: 0.5s;
+}
+
+.description-clinica {
+    text-align: center;
+    align-items: center;
+}
+
+.description {
+    color: #f1f1f2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+/*Estilização da parte conceito metodologia*/
+
+#ConceitoMetodologia {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 70px;
+}
+
+
+.container-conceito-metodologia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 150vh;
+    gap: 50px;
+    margin: 80px;
+    color: #191919;
+ 
+   
+}
+
+.titulo-principal-conceito-metodologia {
+    color: #f1f1f2;
+    font-size: 30px;
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-conceito-metodologia {
+    color: #f1f1f2;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+   
+
+.conceito {
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px #000;
+}
+
+
+.metodologia {
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px #000;
+    
+
+}
+
+
+#icone-conceito {
+    color: #f1f1f2;
+    font-size:35px;
+    display: flex;
+}
+
+#icone-metodologia {
+    color: #f1f1f2;
+    font-size:35px;
+    display: flex;
+}
+
+.description-conceito-metodologia {
+    color: #f1f1f2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.video-hayashi-conceito-metodologia {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+  
+}
+
+.video-hayashi {
+    width: 900px;
+    height: 800px;
+    border-radius: 30px;  
+    border: 5px solid #191919;
+    box-shadow: 10px 10px 10px #f1f1f2;  
+}
+
+/*Estilizando sessão quem sou */
+
+.titulo-quem-sou {
+    text-align: center;
+    font-size: 30px;
+}
+
+.description-quem-sou {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.container-imagem {
+    margin-top: 90px;
+    margin-right: 200px;
+    
+}
+
+.imgHayashi-quem-sou {
+    width: 600px;
+    height: 700px;
+    border-radius: 100% 60% 100%;  
+    box-shadow: 10px 10px 10px #f1f1f2;
+
+}
+
+.container-quem-sou-geral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #f1f1f2;
+}
+
+
+h3 {
+    margin: 10px;
+    font-size: 30px;
+}
+
+
+.description-formacao {
+    padding: 20px;
+}
+
+.container-card-geral {
+    display: flex;
+    text-align: center;
+    gap: 40px;
+    margin: 30px;
+    height: 10px;
+}
+
+.container-cards-one {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+}
+
+.container-cards-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-one {
+    background-color: #191919;
+    color: #f1f1f2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 20px 20px 20px #000;
+}
+
+.card-two {
+    background-color: #191919;
+    color: #f1f1f2;
+    margin-top: 20px;
+    box-shadow: 20px 20px 20px #000;
+    
+}
+
+#icone-medico {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #f1f1f2;
+    background-color: #191919;
+    border-radius: 80px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Estilização depoimentos */
+
+.local-depoimentos {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.title-depoimentos {
+    text-align: center;
+    color: #f1f1f2;
+    font-size: 40px;
+    margin-top: 30%;
+
+}
+
+.subtitle-depoimentos {
+    color: #f1f1f2;
+    text-align: center;
+}
+
+/*Estilizando o Carrosel de depoimentos */
+
+.depoimentos {
+    width: 100%;
+    padding: 50px 20px;
+    max-width: 900px;
+    background-color: #191919; /*pra deixar o card do carrosel branco*/
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px #000;
+}
+
+.depoimentos .slide {
+    padding: 40px 60px;
+    cursor: grab;
+}
+
+.depoimentos .slide:active {
+    cursor: grabbing;
+}
+
+#quote {
+    font-size: 90px;
+    color: #dfdfdf;
+}
+
+
+.depoimentos p.depoi-txt {
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: #f1f1f2;
+}
+
+.slide .person{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slide .person p.paciente {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f1f1f2;
+}
+
+#paciente {
+    color: #f1f1f2;
+    font-size: 15px;
+}
+
+.nome-person {
+    color: #f1f1f2;
+}
+
+/* Estilizacão da Contato */
+
+.title-contato {
+    font-size: 40px;
+    color: #f1f1f2;
+}
+
+.container-contato {
+    margin-top: 100px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #191919;
+    border-radius: 15px;
+    height: 150px;
+    box-shadow: 10px 10px 10px #000;
+}
+
+.container-map {
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#mobile-icon {
+    background-color: #f1f1f2;
+    font-size: 34px;
+    color: #191919;
+    padding: 15px;
+    border-radius: 100px;
+
+}
+
+#whatsapp-icon {
+    background-color: #f1f1f2;
+    font-size: 34px;
+    color: #191919;
+    padding: 15px;
+    border-radius: 100px;
+}
+
+#map-icon {
+    background-color: #f1f1f2;
+    font-size: 34px;
+    color: #191919;
+    padding: 15px;
+    border-radius: 100px;
+}
+
+.description-footer {
+    color: #f1f1f2;
+}
+
+/* Estilizando o link inspecionar do mapa */
+
+
+/* Estilizando footer: */
+
+.roda-pe {
+    background-color: #191919;
+    box-shadow: 10px 10px 10px #0000;
+}
+
+.img-container-footer {
+    text-align: center;
+   
+}
+
+.logo-hayashi-footer {
+    width: 80px;
+    text-align: center;
+    background-color: #f1f1f2;
+    border-radius: 100%;
+    margin: 30px;
+   
+}
+
+.container-icon-instagram {
+    text-align: center;
+    align-items: center;
+}
+
+.copyright {
+    text-align: center;
+    color: #f1f1f2;
+}
+
+#icon-instagram {
+    font-size: 30px;
+    background-color: #f1f1f2;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 20px;
+    transition: .2s;
+
+}
+
+#icon-instagram:hover {
+    padding: 12px;
+}
+
+.link-instagram {
+    color: #191919;
+}
+
+/*MENU MOBILE */
+
+.nav-button-mobile {
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #191919;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.nav-button-mobile i {
+    color: #f1f1f2;
+}
+
+.overlay {
+    height: 100%;
+    background-color:#191919;
+    z-index: 9;
+    position: fixed;
+    width: 0%;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.overlay-content li a {
+    color: #f1f1f2;
+}
+
+div.closebtn  {
+    color: #f1f1f2;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #f1f1f2;
+    display: block;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #ffff;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    font-size: 60px;
+}
+
+.nav-button-mobile {
+    display: none;
+}
+
+.overlay {
+    display: none;
+}
+
+.nav-button-wrapper {
+    position: relative;
+}
+
+/*RESPONSIVIDADE PARA TELAS MENORES:    
+VAMOS UTILIZAR A UNIDADE DE MEDIDA EM REM PARA TESTAR.*/
+
+@media (max-width: 2560px) {
+    .title-depoimentos {
+        margin-top: 65rem;
+    }
+
+    .description-formacao {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1920px) {
+    .list-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8.5rem;
+    }
+
+    .description-clinica {
+        margin: 2.5rem;
+      
+    }
+
+    .titulo-principal-conceito-metodologia {
+        margin-top: 15rem;
+    }
+
+    .title-depoimentos {
+        margin-top: 65rem;
+    }
+}
+
+@media (max-width: 1680px) {
+    .description {
+        font-size: 20px;
+    }
+
+    .titulo-principal-conceito-metodologia {
+        margin-top: 15rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .list-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .titulo-principal-conceito-metodologia {
+        margin-top: 20rem;
+    }
+
+    .map {
+        width: 75rem;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .title-depoimentos {
+        margin-top: 70rem;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    
+    * {
+        width: auto;
+    }
+
+    .list-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5px;
+    }
+
+    .titulo-default {
+        margin-right:-2.9rem;
+        margin-bottom: 4rem;
+        font-size: 1.7rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin-right:-5.9rem;
+        padding: 0.2rem;
+         
+    }
+
+    .img-container-clinica {
+        margin-top: 4rem;
+    }
+
+    .img-clinica {
+        margin-right: 0.8rem;
+        width: 23rem;
+    }
+
+    .titulo-principal-conceito-metodologia {
+        margin-top: 17rem;
+    }
+
+    .conceito {
+        margin-left: 8rem;
+    }
+
+    .metodologia {
+        margin-left: 8rem;
+    }
+
+    .description-conceito-metodologia {
+        font-size: 1.1rem;
+    }
+
+    .video-hayashi-conceito-metodologia {
+        margin-right: 14rem;
+        width: 19rem;
+        margin-left: 4rem
+    }
+
+    .video-hayashi {
+       width: 29rem; 
+    }
+
+    .titulo-quem-sou {
+        margin-left: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .description-quem-sou {
+        margin-left: 9rem;
+        font-size: 1.5rem;
+    }
+
+    .imgHayashi-quem-sou {
+        margin-left: -1rem;
+        width: 25rem;
+    }
+
+    .title-depoimentos {
+        margin-top: 70rem;
+    }
+
+    .title-contato {
+        margin: 1px;
+
+    }
+
+    .container-contato {
+        width: 63rem;
+        gap: 10px;
+       
+    }
+
+    .map {
+        width: 50rem;
+    }
+}
+
+/*RESPONSIVIDADE PARA DIPOSITIVOS MÓVEIS:*/
+@media (max-width: 926px) {
+
+.parte-principal {
+    width: auto;
+}
+
+.sobreclinica {
+    width: 100%; /* Use a largura total da tela */
+    height: auto; /* Ajuste a altura automaticamente */
+    text-align: center;
+}
+
+.container-clinica {
+    display: flex;
+    flex-direction: column; /* Organize os elementos em colunas */
+    align-items: center; /* Centralize os elementos horizontalmente */
+    justify-content: center; /* Centralize os elementos verticalmente */
+}
+
+.titulo-default {
+    margin: 1rem 0; /* Ajuste as margens para o espaçamento desejado */
+    font-size: 1.9rem;
+}
+
+.description {
+   margin: 1rem 0; /* Ajuste as margens para o espaçamento desejado */
+}
+
+.img-container-clinica {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Garante que a altura do container seja igual à altura da imagem */
+}
+
+.img-clinica {
+    width: 25rem;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block; /* Para garantir que o margin: 0 auto funcione corretamente */
+}
+
+#ConceitoMetodologia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+}
+
+.container-conceito-metodologia {
+    width: 0;
+}
+
+.conceito {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 25rem; /* Altera a largura para ocupar toda a largura do dispositivo */
+    height: 30rem;
+    margin-right: 15rem;
+    
+}
+
+.description-conceito-metodologia {
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.metodologia  {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 25rem; /* Altera a largura para ocupar toda a largura do dispositivo */
+    height: 30rem;
+    margin-right: 15rem;
+}
+
+.video-hayashi-conceito-metodologia {
+    width: 60%; /* Ajuste para ocupar toda a largura do dispositivo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 9rem;
+}
+
+.video-hayashi {
+    width: 150%; /* Ajuste para ocupar toda a largura do dispositivo */
+    max-width: 40rem; /* Defina uma largura máxima para evitar que o vídeo se torne muito grande em telas maiores */
+}
+
+.container-quem-sou-geral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-quemsou {
+    text-align: center;
+    justify-content: center;
+    margin-right: 9.8rem;
+}
+
+.description-quem-sou {
+    width: 28rem;
+}
+
+.container-imagem {
+    margin-right: 0.3rem;
+}
+
+.container-card-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.title-depoimentos {
+    margin-top: 130rem;
+}
+
+.depoimentos {
+    margin-bottom: 0.5rem;
+}
+
+.container-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
+    width: 28rem;
+}
+
+.map {
+    width: 100%; /* Use a largura total da tela */
+    margin: 1rem 0; /* Ajuste as margens para o espaçamento desejado */
+}
+
+}
+
+
+@media (max-width: 884px) {
+    
+    
+    .title-depoimentos {
+        margin-top: 80rem;
+    }
+
+    .container-contato {
+        width: 55rem;
+    }
+}
+
+
+@media (max-width: 851px) {
+    * {
+        width: auto;
+    }
+    
+    .title-depoimentos {
+        margin-top: 110rem;
+    }
+}
+
+
+@media (max-width: 834px) {
+    .title-depoimentos {
+        margin-top: 80rem;
+    }
+}
+
+
+@media (max-width: 820px) {
+    .title-depoimentos {
+        margin-top: 80rem;
+    }
+
+}
+
+@media (max-width: 812px) {
+    .title-depoimentos {
+        margin-top: 80rem;
+    }
+
+    .container-contato {
+        width: auto;
+    }
+
+    .metodologia {
+        width: 20rem;
+        height: 38rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /*PARTE DO MENU MOBILE.*/
+    .navbar {
+        display: none;
+    }
+
+    .overlay {
+        display: flex;
+    }
+
+    .nav-button-mobile {
+        margin-top: 0;
+        display: flex;
+    }
+
+    .mobile-menu {
+        margin-top: 20px;
+        align-items: center;
+    }
+    
+    .overlay-content li {
+        margin-top: 50px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .metodologia  {
+        width: 25rem;
+    }
+
+    .title-depoimentos {
+        margin-top: 120rem;
+    }
+
+    #btn-carrossel {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    .title-depoimentos {
+        margin-top: 125rem;
+    }
+
+    .metodologia {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 412px) {
+    
+    .titulo-quem-sou {
+        margin-top: 5rem;
+    }
+
+    .title-depoimentos {
+        margin-top: 125rem;
+    }
+}
+
+@media (max-width: 393px) {
+
+    .title-depoimentos {
+        margin-top: 130rem;
+    }
+
+    .conceito {
+        width: 24rem;
+    }
+
+    .metodologia  {
+        width: 24rem;
+    }
+
+    .imgHayashi-quem-sou {
+        width: 22rem;
+    }
+
+    .description-quem-sou {
+        width: 24rem;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .title-depoimentos {
+        margin-top: 140rem;
+    }
+
+    .conceito {
+        width: 20rem;
+    }
+
+    .metodologia {
+        width: 20rem;
+        height: 40rem;
+    }
+
+    .description-quem-sou {
+        width: 20rem;
+    }
+
+    .imgHayashi-quem-sou {
+        width: 19rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .title-depoimentos {
+        margin-top: 160rem;
+    }
+}
+
