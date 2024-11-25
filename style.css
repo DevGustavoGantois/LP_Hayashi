@@ -674,6 +674,18 @@ div.closebtn  {
     position: relative;
 }
 
+.dev-footer {
+    text-align: center;
+    margin-bottom: 25px;
+    transition: all 0.3s;
+}
+
+.dev-footer a {
+    color: #f5f5f5;
+    font-size: 13px;
+    text-decoration: none;
+}
+
 /*RESPONSIVIDADE PARA TELAS MENORES:    
 VAMOS UTILIZAR A UNIDADE DE MEDIDA EM REM PARA TESTAR.*/
 
